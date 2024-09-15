@@ -1,0 +1,86 @@
+header {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    background: #072146;
+    padding: 20px 30px; /* Añade un poco de espacio dentro del header */
+    justify-content: space-between;
+}
+
+body{
+    background-color: #072146;
+}
+
+#logo {
+    width: 10%;
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+
+#user {
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#botones{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logins{    
+    background-color: #415C82;
+    border-radius: 5px;
+    margin: 13px;
+    margin-bottom: 30px;
+}
+
+.loginsT{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFF;
+}
+
+main{
+    background-color: #043263;
+}
+
+.windows{
+    display: flex;
+    margin: 0 auto;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.windows li{
+    width: 40%;
+    height: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 2% 1.5%;
+    padding: 30px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    transition: 0.5s all;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+.windows li:hover{
+    transform: scale(1.1);
+    
+}
+
+.windows h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(133, 177, 177);
+    margin: 15px;
+  }

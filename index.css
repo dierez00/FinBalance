@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Coloca el logo a la izquierda y los botones a la derecha */
+    background: #072146;
+    padding: 20px 30px;
+}
+
+#botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Añade espacio entre los botones */
+}
+
+.logins {    
+    background-color: #415C82;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 20px; /* Ajusta el tamaño interno del botón */
+    border: none;
+    cursor: pointer;
+}
+
+.loginsT {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFF;
+    margin: 0; /* Elimina márgenes internos en el texto */
+}
+
+button.logins:hover {
+    transform: scale(1.2);
+    background-color: #5a7b9f; /* Cambia el color de fondo al hacer hover */
+    
+}
+
+body {
+    background-color: #072146;
+}
+
+main {
+    background-color: #043263;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(133, 177, 177);
+    margin: 15px;
+  }
+
+div{
+    margin: 10px;
+}
+
+.text{
+    color: #CCC;
+    margin: 10px;
+}

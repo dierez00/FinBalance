@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('custom_static', filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('custom_static', filename='finbalance1.css') }}">
+    <title>Finance Manager</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="icon" href="{{ url_for('custom_static_imagenes', filename='FINBALANCE.ico') }}" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="{{ url_for('custom_static_imagenes', filename='FINBALANCE-removebg-preview.png') }}" alt="logo" style="width: 10%; margin-left: 30px;">
+        <nav>
+            <li><a href="/menu">HOME</a></li>
+            <li><a href="/finance_manaher">MANAGER</a></li>
+            <li><a href="/data_center">DATA</a></li>
+            <li><a href="/financing_IA">SUGGESTIONS</a></li>
+        </nav>
+    </header>
+    <main style="align-items: center; display: flex; flex-direction: column; ">
+        <!-- Mostrar múltiples gráficos -->
+        <h1 style="Color: #FFF; font-size: 40px; justify-content: center; margin: 10px; display: flex;">Monthly Graphcs</h1>
+        {% for grafico in graficos %}
+        <div class="grafico" style="width: 70%">
+            <h2 style="Color: ##072146;">{{ grafico.nombre if grafico.nombre else grafico.id }}</h2>
+            
+            {{ grafico.grafico|safe }}
+        </div>
+        {% endfor %}
+    </main>
+    <footer>
+    <footer>
+        Todos los derechos reservados ©
+    </footer>
+</body>
+</html>

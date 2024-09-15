@@ -1,0 +1,61 @@
+header{
+    opacity: var(--sds-size-stroke-border);
+    background: #072146;
+}
+
+body{
+    opacity: var(--sds-size-stroke-border);
+    background: #072146;
+}
+
+main{
+    background-color: #043263;
+}
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between; /* Coloca el logo a la izquierda y el nav a la derecha */
+    align-items: center; /* Alinea verticalmente el contenido del header */
+    padding: 0 30px; /* Añade espacio alrededor del contenido del header */
+  }
+  
+  /* Estilos para el logo */
+  #logo {
+    width: 10%;
+    margin: 0;
+  }
+  
+  /* Estilos para el nav */
+  nav {
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    list-style: none; /* Asegura que no haya viñetas */
+    margin: 0 10px; /* Espacio entre los elementos del nav */
+  }
+  
+  nav a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+  
+  /* Estilo hover */
+  nav li:hover {
+    transform: scale(1.1);
+    color: rgb(255, 247, 0);
+  }
+  
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(133, 177, 177);
+    margin: 15px;
+  }
